@@ -1,3 +1,4 @@
 # lp-milp-examples
 
-# This project is about LP/MILP/QP problems. Different problems and software will be described. 
+# This project is about LP/MILP/QP problems. We will consider different problems and software
+
