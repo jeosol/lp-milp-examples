@@ -1,0 +1,1 @@
+glpsol --lp test-plan.lp --wlp cplex-lp.dat -o sol.dat --ranges sent.dat

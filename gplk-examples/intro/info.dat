@@ -1,0 +1,8 @@
+;; gplk error
+glpsol: error while loading shared libraries: libglpk.so.40: cannot open shared object file: No such file or directory
+
+The above error was fixed by creating a link to the above library (which is
+installed in usr/local/lib64) in /usr/lib64. After this is done, running
+"glpsol --lp test-plan.lp" does run without problems
+
+

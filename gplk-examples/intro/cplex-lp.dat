@@ -1,0 +1,29 @@
+\* Problem: Unknown *\
+
+Minimize
+ value: + 0.03 bin1 + 0.08 bin2 + 0.17 bin3 + 0.12 bin4 + 0.15 bin5
+ + 0.21 alum + 0.38 silicon
+
+Subject To
+ yield: + bin1 + bin2 + bin3 + bin4 + bin5 + alum + silicon = 2000
+ fe: + 0.15 bin1 + 0.04 bin2 + 0.02 bin3 + 0.04 bin4 + 0.02 bin5
+ + 0.01 alum + 0.03 silicon <= 60
+ cu: + 0.03 bin1 + 0.05 bin2 + 0.08 bin3 + 0.02 bin4 + 0.06 bin5
+ + 0.01 alum <= 100
+ mn: + 0.02 bin1 + 0.04 bin2 + 0.01 bin3 + 0.02 bin4 + 0.02 bin5 <= 40
+ mg: + 0.02 bin1 + 0.03 bin2 <= 30
+ al: + 0.7 bin1 + 0.75 bin2 + 0.8 bin3 + 0.75 bin4 + 0.8 bin5
+ + 0.97 alum >= 1500
+ si1: + 0.02 bin1 + 0.06 bin2 + 0.08 bin3 + 0.12 bin4 + 0.02 bin5
+ + 0.01 alum + 0.97 silicon >= 250
+ si2: + 0.02 bin1 + 0.06 bin2 + 0.08 bin3 + 0.12 bin4 + 0.02 bin5
+ + 0.01 alum + 0.97 silicon <= 300
+
+Bounds
+ 0 <= bin1 <= 200
+ 0 <= bin2 <= 2500
+ 400 <= bin3 <= 800
+ 100 <= bin4 <= 700
+ 0 <= bin5 <= 1500
+
+End
